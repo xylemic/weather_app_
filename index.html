@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="weather_card">
+      <div class="city_search">
+        <input
+          type="text"
+          id="city_input"
+          placeholder="Enter city name"
+          spellcheck="false"
+        />
+        <button id="search_button">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+      <div class="weather">
+        <img src="./assets/images/clear.png" alt="" class="weather_icon" />
+        <h4 id="weather_description">Clear</h4>
+        <h1 id="temperature">25°C</h1>
+        <h2 id="city_name">Port Harcourt</h2>
+        <div class="details">
+          <div class="col">
+            <img src="./assets/images/humidity.png" alt="" />
+            <div>
+              <p id="humidity">75%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="./assets/images/wind.png" alt="" />
+            <div>
+              <p id="wind">4.56 km/h</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

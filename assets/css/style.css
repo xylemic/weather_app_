@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sofadi+One&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #222;
+  color: #fff;
+}
+
+.weather_card {
+  width: 90%;
+  max-width: 475px;
+  margin: 150px auto;
+  background: linear-gradient(135deg, #00feba, #cd8acd);
+  border-radius: 20px;
+  box-shadow: 0 0 10px black;
+  padding: 20px 35px;
+  text-align: center;
+}
+
+.city_search {
+  width: 80%;
+  margin: 0 auto;
+  background: transparent;
+  padding: 20px;
+  border-radius: 30px;
+  border: 3px solid #fff;
+}
+
+.city_search input {
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  background: transparent;
+  outline: 0;
+  color: #fff;
+}
+
+.city_search input::placeholder {
+  color: #ccc;
+  font-size: 18px;
+}
+
+.city_search button {
+  border: none;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.city_search button i {
+  font-size: 24px;
+}
+
+.weather-icon {
+  width: 170px;
+  margin-top: 30px;
+}
+
+.weather h1 {
+  font-size: 80px;
+  font-weight: 500;
+}
+
+.weather h2 {
+  font-size: 45px;
+  font-weight: 400;
+  /* margin-top: -10px; */
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.col img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.humidity,
+.wind {
+  font-size: 28px;
+  margin-top: -6px;
+}
+
+.weather {
+  display: none;
+}
